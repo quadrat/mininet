@@ -86,7 +86,7 @@ class Intf( object ):
                 ipstr = '%s/%s' % ( ipstr, prefixLen )
             if index == 0:
                 dev = self.name
-                self.ip, self.prefixLen = ip, prefixLen
+                self.ip, self.prefixLen = ip[0], prefixLen
             else:
                 dev = '%s:%d' % ( self, index )
             if ':' not in ipstr:
